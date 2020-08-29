@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+
+    "name": "!Bang Search+",
+    "version": "0.1.0",
+    "author": "Aki Zhou",
+    "description": "DuckDuckGo !Bang search shortcuts + custom bangs",
+
+    "icons": {
+        "16": "./img/16.png",
+        "48": "./img/48.png",
+        "128": "./img/128.png"
+    },
+
+    "permissions": [
+        "storage"
+    ],
+
+    "background": {
+        "scripts": [
+            "./js/background.js"
+        ],
+        "persistent": false
+    },
+
+    "browser_action": {
+        "default_popup": "./popup.html"
+    },
+
+    "options_page": "./options.html",
+
+    "omnibox": {
+        "keyword": "!"
+    }
+}
